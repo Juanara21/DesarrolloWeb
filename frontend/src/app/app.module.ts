@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -12,7 +12,10 @@ import { ContentCatalogoComponent } from './components/layout/content-catalogo/c
 import { ContentNosotrosComponent } from './components/layout/content-nosotros/content-nosotros.component';
 import { Routes } from '@angular/router';
 
-const appRoutes: Routes = [];
+const appRoutes: Routes = [
+{ path:'',component:HeaderComponent}
+
+];
 
 @NgModule({
   declarations: [
