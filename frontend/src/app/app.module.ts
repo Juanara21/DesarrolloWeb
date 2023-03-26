@@ -7,6 +7,9 @@ import { HeaderComponent } from './components/layout/header/header.component';
 import { ContentComponent } from './components/layout/content/content.component';
 import { FooterComponent } from './components/layout/footer/footer.component';
 import { AsideComponent } from './components/layout/aside/aside.component';
+import { ContentQuienesomosComponent } from './components/layout/content-quienesomos/content-quienesomos.component';
+import { ContentCatalogoComponent } from './components/layout/content-catalogo/content-catalogo.component';
+import { ContentNosotrosComponent } from './components/layout/content-nosotros/content-nosotros.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { AsideComponent } from './components/layout/aside/aside.component';
     HeaderComponent,
     ContentComponent,
     FooterComponent,
-    AsideComponent
+    AsideComponent,
+    ContentQuienesomosComponent,
+    ContentCatalogoComponent,
+    ContentNosotrosComponent
   ],
   imports: [
     BrowserModule,
