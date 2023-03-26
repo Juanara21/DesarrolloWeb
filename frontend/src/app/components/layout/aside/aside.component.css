@@ -1,0 +1,34 @@
+
+.menu_lateral{
+    padding: 20px 40px;
+    top: 80px;
+}
+
+.menu_lateral a{
+    color: #ffffffb2;
+    cursor: default;
+}
+
+.menu_lateral a:hover{
+    color: white;
+}
+
+.menu_lateral i{
+    width: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.menu_lateral h4{
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.menu_lateral ul{
+    list-style: none; 
+}
+
+.menu_lateral li{
+    padding: 20px 10px;
+}

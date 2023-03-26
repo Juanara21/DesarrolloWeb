@@ -1,0 +1,103 @@
+#logo_principal{
+    margin: 0 auto;
+   
+}
+#texto_principal{
+ 
+ font-weight: 200;
+ cursor: pointer;
+ color: rgb(0, 0, 0);
+ text-align: center;
+}
+#logo_principal{
+    width: 800px;
+    
+}
+
+.producto {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+.producto img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.precio {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+  }
+  
+  #mi-id{ 
+    display: block;
+    text-align: center;
+    font-size: 19.5px;
+    line-height: 1.5em;
+  }
+
+
+.juan {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 30px;
+    position: relative;
+}
+
+
+.juan img { 
+width: 200px;
+height: 200px;
+padding: 70px;
+align-items: center;
+}
+.joaquin {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 30px;
+    position: relative;
+  
+    
+  }
+  /* .joaquin img { 
+    width: 200px;
+    height: 200px;
+    padding: 70px;
+    align-items: center;
+  } */
+
+  /* #j-id{
+    display: block;
+    align-items: center;
+    justify-content: center;
+  } */
+
+  .migue {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 30px;
+    position: relative;
+
+  
+    
+  }
+  /* .migue img { 
+    width: 200px;
+    height: 200px;
+    padding: 70px;
+    align-items: center;
+  } */
+  
+
+  .product-grid img {
+    width: 200px;
+    height: 200px;
+  }

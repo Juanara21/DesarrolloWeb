@@ -1,0 +1,11 @@
+#header_text{
+    padding: 10px 30px;
+    display: flex;
+    font-size: 20px;   
+    align-items: center;
+}
+
+#header_text i{
+    margin-right: 10px;
+    font-size: 30px;
+}
