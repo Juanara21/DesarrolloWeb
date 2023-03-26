@@ -10,6 +10,9 @@ import { AsideComponent } from './components/layout/aside/aside.component';
 import { ContentQuienesomosComponent } from './components/layout/content-quienesomos/content-quienesomos.component';
 import { ContentCatalogoComponent } from './components/layout/content-catalogo/content-catalogo.component';
 import { ContentNosotrosComponent } from './components/layout/content-nosotros/content-nosotros.component';
+import { Routes } from '@angular/router';
+
+const appRoutes: Routes = [];
 
 @NgModule({
   declarations: [
