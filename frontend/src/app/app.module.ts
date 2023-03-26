@@ -13,10 +13,10 @@ import { ContentNosotrosComponent } from './components/layout/content-nosotros/c
 import { Routes } from '@angular/router';
 
 const appRoutes: Routes = [
-{ path:'',component:ContentQuienesomosComponent}
-{ path:'',component:ContentQuienesomosComponent}
-{ path:'',component:ContentQuienesomosComponent}
-{ path:'',component:ContentQuienesomosComponent}
+{ path:'quienessomos',component:ContentQuienesomosComponent}
+{ path:'nosotros',component:ContentNosotrosComponent}
+{ path:'catologo',component:ContentCatalogoComponent}
+{ path:'',component:ContentComponent}
 
 
 ];
