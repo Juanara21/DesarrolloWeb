@@ -1,9 +1,9 @@
 #logo_principal{
     margin: 0 auto;
-   
+
 }
 #texto_principal{
- 
+
  font-weight: 200;
  cursor: pointer;
  color: rgb(0, 0, 0);
@@ -11,5 +11,5 @@
 }
 #logo_principal{
     width: 800px;
-    
+
 }
