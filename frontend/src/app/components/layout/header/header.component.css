@@ -1,11 +1,21 @@
-#header_text{
-    padding: 10px 30px;
-    display: flex;
-    font-size: 20px;   
-    align-items: center;
+header {
+  grid-area: header;
+  background: #000000f1;
+  color: #ffffff;
 }
 
-#header_text i{
-    margin-right: 10px;
-    font-size: 30px;
+#header_text {
+  padding: 15px 30px;
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  justify-content: space-between; /* Agregamos esta propiedad */
+}
+
+#header_text i {
+  margin-right: 10px;
+  font-size: 30px;
+}
+.logo {
+  width: 100px;
 }
