@@ -32,10 +32,13 @@
     font-weight: 600;
     cursor: pointer;
     display: inline-block;
+
 }
 
 .menu_lateral ul{
+
     list-style: none; 
+    
 }
 
 .menu_lateral li{
