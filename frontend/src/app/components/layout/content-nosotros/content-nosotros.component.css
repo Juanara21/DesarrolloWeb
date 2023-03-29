@@ -180,8 +180,10 @@ align-items: center;
   width: 200px ;
   height: 200px;
   padding: 70px;
-  position:;
+  position:relative;
   align-items: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 } */
 
 
