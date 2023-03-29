@@ -224,6 +224,7 @@ text-align: center;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 30px;
   position: relative;
+  align-items: center;
 
 
 
@@ -262,5 +263,5 @@ footer p{
   font-size: 12px;
   align-items: center;
   justify-content: center;
-  
+
 }
