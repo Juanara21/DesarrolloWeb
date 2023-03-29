@@ -31,6 +31,12 @@ section {
     overflow-y: auto;
 
 }
-  
+  footer {
+    grid-area: pie;
+    background: #000000dc;
+    color: #ffffffd0;
+    height: 50px;
+
+}
 
 
