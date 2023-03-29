@@ -32,10 +32,10 @@ section {
 
 }
   footer {
-    grid-area: pie;
+    grid-area: pie; 
     background: #000000dc;
     color: #ffffffd0;
-    height: 50px;
+    height: 50px; 
 
 }
 
