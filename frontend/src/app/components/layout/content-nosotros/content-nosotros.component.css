@@ -146,6 +146,9 @@ width: 200px;
 height: 200px;
 padding: 70px;
 align-items: center;
+display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 30px;
 } */
 .joaquin {
   display: grid;
@@ -160,11 +163,17 @@ align-items: center;
   height: 200px;
   padding: 70px;
   align-items: center;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(5, 1fr);
 } */
 /* #j-id{
   display: block;
   align-items: center;
   justify-content: center;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(5, 1fr);
 } */
 
 .migue {
@@ -179,6 +188,7 @@ align-items: center;
 /* .migue img {
   width: 200px ;
   height: 200px;
+  grid-gap: 30px;
   padding: 70px;
   position:relative;
   align-items: center;
