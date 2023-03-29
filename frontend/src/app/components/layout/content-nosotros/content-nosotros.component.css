@@ -41,7 +41,7 @@ aside {
   color: white;
   grid-area: aside;
   font-size: 18px;
-  height: 100%; /* Agregamos una altura del 100% para que el aside tenga la misma altura que la ventana gráfica */
+  height: 100%; 
 }
 
 .menu_lateral{
@@ -96,34 +96,36 @@ font-weight: 200;
 cursor: pointer;
 color: rgb(0, 0, 0);
 text-align: center;
+
 }
 #logo_principal{
+
   width: 800px;
 
 }
 
-.producto {
+/* .juan {
   border: 1px solid #ccc;
   padding: 20px;
   text-align: center;
 }
 
-.producto img {
+.juan img {
   max-width: 100%;
   margin-bottom: 10px;
-}
-
+} */
+/* 
 .precio {
   display: block;
   margin-top: 10px;
   font-weight: bold;
-}
+} */
 
-.product-grid {
+/* .product-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 20px;
-}
+} */
 
 #mi-id{
   display: block;
@@ -133,76 +135,27 @@ text-align: center;
 }
 
 
-.juan {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 30px;
-  position: relative;
+.juan, .joaquin, .migue {
+  display: inline-block;
+  margin-right: 70px;
+  margin-left: 70px; 
 }
 
-
-/* .juan img {
-width: 200px;
-height: 200px;
-padding: 70px;
-align-items: center;
-display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 30px;
-} */
-.joaquin {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 30.1px;
-  position: relative;
-
-
-}
-/* .joaquin img {
-  width: 200px;
-  height: 200px;
-  padding: 70px;
-  align-items: center;
-  display: grid;
-  grid-gap: 30px;
-  grid-template-columns: repeat(5, 1fr);
-} */
-/* #j-id{
-  display: block;
-  align-items: center;
-  justify-content: center;
-  display: grid;
-  grid-gap: 30px;
-  grid-template-columns: repeat(5, 1fr);
-} */
 
 .migue {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 30px;
-  position: relative;
-
-
-
+  margin-right: 0; 
 }
-/* .migue img {
-  width: 200px ;
-  height: 200px;
-  grid-gap: 30px;
-  padding: 70px;
-  position:relative;
-  align-items: center;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-} */
-
 
 .product-grid img {
   width: 200px;
   height: 200px;
 }
 
-
+img {
+  width: 150px; 
+  height: 150px;
+  margin-top: 10px;
+}
 footer {
   grid-area: pie;
   background: #000000dc;
