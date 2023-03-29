@@ -150,7 +150,7 @@ align-items: center;
 .joaquin {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-gap: 30px;
+  grid-gap: 30.1px;
   position: relative;
 
 
