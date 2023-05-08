@@ -61,21 +61,21 @@ Copy code
     "dialect": "mysql"
   }
 }`
-Creación de modelos
-Crea un directorio models en la raíz de tu proyecto.
-Crea un archivo Cliente.js en el directorio models. 
-Aquí te dejo un ejemplo de cómo podría verse el modelo Cliente:
+#### Creación de modelos
+#### Crea un directorio models en la raíz de tu proyecto.
+#### Crea un archivo Cliente.js en el directorio models. 
+#### Aquí te dejo un ejemplo de cómo podría verse el modelo Cliente:
 
 Modelo Cliente:
 
 javascript
 Copy code
-`const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/database');`
+`const { Model, DataTypes } = require('sequelize');`
+`const sequelize = require('../config/database');`
 
-`class Cliente extends Model {}
+`class Cliente extends Model {}`
 
-Cliente.init({
+`Cliente.init({
   id: {
     type: DataTypes.INTEGER,
     primaryKey: true,
