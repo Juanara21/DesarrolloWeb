@@ -4,7 +4,7 @@ Aquí te dejo una guía completa paso a paso para crear un backend con node.js, 
 Instalación de las herramientas
 Instala Node.js en tu computadora.
 
-##Crea un directorio para tu proyecto y accede a él desde la terminal.
+## Crea un directorio para tu proyecto y accede a él desde la terminal.
 
 Ejecuta el siguiente comando en la terminal para crear un archivo package.json y así poder manejar las dependencias de tu proyecto:
 
@@ -30,7 +30,7 @@ DB_HOST=localhost
 DB_PORT=3306
 DB_DATABASE=mydatabase
 
-##Configuración de la base de datos
+## Configuración de la base de datos
 Crea una base de datos en MySQL utilizando un cliente de MySQL, como phpMyAdmin o MySQL Workbench.
 
 En el archivo config.json (que debes crear en el directorio config), configura las credenciales de la base de datos que acabas de crear. Aquí te dejo un ejemplo de cómo podría verse el archivo config.json:
