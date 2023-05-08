@@ -1,20 +1,22 @@
+# Guia Para Crear Backend
+
 Aquí te dejo una guía completa paso a paso para crear un backend con node.js, express, mysql y sequelize.
 
 Instalación de las herramientas
 Instala Node.js en tu computadora.
 
-Crea un directorio para tu proyecto y accede a él desde la terminal.
+## Crea un directorio para tu proyecto y accede a él desde la terminal.
 
 Ejecuta el siguiente comando en la terminal para crear un archivo package.json y así poder manejar las dependencias de tu proyecto:
 
 bash
 Copy code
-npm init -y
+`npm init -y`
 Instala las dependencias necesarias para el proyecto ejecutando el siguiente comando:
 
 bash
 Copy code
-npm install express mysql2 sequelize dotenv
+`npm install express mysql2 sequelize dotenv`
 express: un framework de Node.js para crear aplicaciones web.
 mysql2: un driver de MySQL para Node.js.
 sequelize: un ORM (Object-Relational Mapping) para Node.js que facilita la interacción con bases de datos relacionales.
@@ -23,20 +25,20 @@ Crea un archivo .env en la raíz de tu proyecto para almacenar tus variables de 
 
 bash
 Copy code
-DB_USERNAME=root
+`DB_USERNAME=root
 DB_PASSWORD=password
 DB_HOST=localhost
 DB_PORT=3306
-DB_DATABASE=mydatabase
+DB_DATABASE=mydatabase`
 
-Configuración de la base de datos
+## Configuración de la base de datos
 Crea una base de datos en MySQL utilizando un cliente de MySQL, como phpMyAdmin o MySQL Workbench.
 
 En el archivo config.json (que debes crear en el directorio config), configura las credenciales de la base de datos que acabas de crear. Aquí te dejo un ejemplo de cómo podría verse el archivo config.json:
 
 json
 Copy code
-{
+`{
   "development": {
     "username": "root",
     "password": "password",
@@ -58,20 +60,20 @@ Copy code
     "host": "localhost",
     "dialect": "mysql"
   }
-}
+}`
 Creación de modelos
 Crea un directorio models en la raíz de tu proyecto.
-
-Crea un archivo Cliente.js en el directorio models. Aquí te dejo un ejemplo de cómo podría verse el modelo Cliente:
+Crea un archivo Cliente.js en el directorio models. 
+Aquí te dejo un ejemplo de cómo podría verse el modelo Cliente:
 
 Modelo Cliente:
 
 javascript
 Copy code
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/database');
+`const { Model, DataTypes } = require('sequelize');
+const sequelize = require('../config/database');`
 
-class Cliente extends Model {}
+`class Cliente extends Model {}
 
 Cliente.init({
   id: {
@@ -106,13 +108,13 @@ Cliente.init({
 });
 
 module.exports = Cliente;
-
+`
 
 Modelo Venta:
 
 javascript
 Copy code
-const { Model, DataTypes } = require('sequelize');
+`const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
 const Cliente = require('./cliente');
 
@@ -187,13 +189,13 @@ ProductoVenta.belongsTo(Producto);
 ProductoVenta.belongsTo(Venta);
 
 module.exports = ProductoVenta;
-
+`
 
 Modelo TipoProducto:
 
 javascript
 Copy code
-const { Model, DataTypes } = require('sequelize');
+`const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
 
 class TipoProducto extends Model {}
@@ -215,13 +217,13 @@ TipoProducto.init({
 });
 
 module.exports = TipoProducto;
-
+`
 
 Modelo Producto:
 
 javascript
 Copy code
-const { Model, DataTypes } = require('sequelize');
+`const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
 const TipoProducto = require('./tipoProducto');
 
@@ -253,7 +255,7 @@ Producto.init({
   modelName: 'producto'
 });
 
-module.exports = Producto;
+module.exports = Producto;`
 
 Para crear los controladores y rutas en Express, podemos seguir la siguiente estructura de carpetas:
 
@@ -273,10 +275,10 @@ Para crear los controladores y rutas en Express, podemos seguir la siguiente est
 Cada controlador se encargará de implementar la lógica necesaria para cada modelo y cada ruta se encargará de asociar una URL a un método en el controlador correspondiente. Aquí te dejo un ejemplo para cada uno:
 
 clientesController.js:
-const { Cliente } = require('../models');
+`const { Cliente } = require('../models');`
 
 // Obtener todos los clientes
-const getAllClientes = async (req, res) => {
+`const getAllClientes = async (req, res) => {
   try {
     const clientes = await Cliente.findAll();
     res.status(200).json({ clientes });
@@ -284,10 +286,10 @@ const getAllClientes = async (req, res) => {
     console.log(error);
     res.status(500).json({ message: "Error en el servidor" });
   }
-};
+};`
 
 // Obtener un cliente por su id
-const getClienteById = async (req, res) => {
+`const getClienteById = async (req, res) => {
   const { id } = req.params;
   try {
     const cliente = await Cliente.findOne({
@@ -371,9 +373,9 @@ module.exports = {
   updateCliente,
   deleteCliente
 };
- Aquí te comparto los ejemplos de los controladores para los modelos que faltan:
+` Aquí te comparto los ejemplos de los controladores para los modelos que faltan:
 
-Controlador para la tabla ventas:
+Controlador para la tabla ventas:`
 
 javascript
 Copy code
@@ -403,13 +405,13 @@ module.exports = {
   crearVenta,
   obtenerVentas,
 };
-
+`
 
 Controlador para la tabla Tiporproducto:
 
 javascript
 Copy code
-const { TipoProducto } = require('../models');
+`const { TipoProducto } = require('../models');
 
 const crearTipoProducto = async (req, res) => {
   try {
@@ -436,11 +438,11 @@ module.exports = {
   obtenerTiposProducto,
 };
 
-
+`
 Controlador para la tabla productos:
 
 javascript
-Copy code
+Copy code`
 const { Producto } = require('../models');
 
 const crearProducto = async (req, res) => {
@@ -497,7 +499,7 @@ module.exports = {
   crearProductVenta,
   obtenerProductosVentas,
 };
-
+`
 Es importante mencionar que estos son solo ejemplos y que los controladores pueden variar dependiendo de las necesidades específicas
 
 Claro, a continuación te proporciono un ejemplo de las rutas para cada modelo:
@@ -506,7 +508,7 @@ Rutas para el modelo Cliente:
 
 javascript
 Copy code
-const express = require('express');
+`const express = require('express');
 const router = express.Router();
 const clientesController = require('../controllers/clientesController');
 
@@ -527,11 +529,11 @@ router.delete('/clientes/:id', clientesController.eliminarCliente);
 
 module.exports = router;
 
-
+`
 Rutas para el modelo Venta:
 
 javascript
-Copy code
+Copy code`
 const express = require('express');
 const router = express.Router();
 const ventasController = require('../controllers/ventasController');
@@ -553,11 +555,11 @@ router.delete('/ventas/:id', ventasController.eliminarVenta);
 
 module.exports = router;
 
-
+`
 Rutas para el modelo Producto_Venta:
 
 javascript
-Copy code
+Copy code`
 const express = require('express');
 const router = express.Router();
 const productoVentaController = require('../controllers/productoVentaController');
@@ -576,11 +578,11 @@ router.delete('/ventas/:id/productos/:idProducto', productoVentaController.elimi
 
 module.exports = router;
 
-
+`
 Rutas para el modelo TipoProducto:
 
 javascript
-Copy code
+Copy code`
 const express = require('express');
 const router = express.Router();
 const tipoProductoController = require('../controllers/tipoProductoController');
@@ -602,9 +604,9 @@ router.delete('/tipos-producto/:id', tipoProductoController.eliminarTipoProducto
 
 module.exports = router;
 
-
+`
 Rutas para el modelo Producto:
-
+`
 const express = require('express');
 const router = express.Router();
 const productoController = require('../controllers/productoController');
@@ -615,12 +617,12 @@ router.get('/productos/:id', productoController.getProductoById);
 router.post('/productos', productoController.createProducto);
 router.put('/productos/:id', productoController.updateProducto);
 router.delete('/productos/:id', productoController.deleteProducto);
-
+`
 por ultimo necesito que me crees el archivo server, donde se lanza todas las rutas y se sincroniza la base de datos 
 
 
 Claro, aquí te muestro un ejemplo de cómo podrías crear el archivo server.js:
-
+`
 
 const express = require('express');
 const app = express();
@@ -654,7 +656,7 @@ sequelize.sync().then(() => {
   });
 }).catch((error) => {
   console.log(`Error al sincronizar la base de datos: ${error.message}`);
-});
+});`
 En este archivo, se importan las rutas definidas previamente y se utilizan con el método app.use(). También se define un middleware para parsear el cuerpo de las solicitudes como JSON.
 
 Luego, se llama al método sequelize.sync() para sincronizar la base de datos con los modelos definidos en la aplicación. Si la sincronización es exitosa, se inicia el servidor y se escucha en el puerto especificado. En caso de que ocurra algún error, se muestra un mensaje en la consola.
