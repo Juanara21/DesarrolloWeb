@@ -16,13 +16,14 @@ Copy code
 
 bash
 Copy code
-`npm install express mysql2 sequelize dotenv`
+``npm install express mysql2 sequelize dotenv`
 express: un framework de Node.js para crear aplicaciones web.
 mysql2: un driver de MySQL para Node.js.
+
 sequelize: un ORM (Object-Relational Mapping) para Node.js que facilita la interacción con bases de datos relacionales.
+
 dotenv: una librería que permite cargar variables de entorno desde un archivo .env.
 Crea un archivo .env en la raíz de tu proyecto para almacenar tus variables de entorno. Aquí puedes colocar tus credenciales de la base de datos, como el nombre de usuario, la contraseña, el host y el puerto. Ejemplo:
-
 bash
 Copy code
 `DB_USERNAME=root
@@ -34,7 +35,7 @@ DB_DATABASE=mydatabase`
 ## Configuración de la base de datos
 Crea una base de datos en MySQL utilizando un cliente de MySQL, como phpMyAdmin o MySQL Workbench.
 
-En el archivo config.json (que debes crear en el directorio config), configura las credenciales de la base de datos que acabas de crear. Aquí te dejo un ejemplo de cómo podría verse el archivo config.json:
+##### En el archivo config.json (que debes crear en el directorio config), configura las credenciales de la base de datos que acabas de crear. Aquí te dejo un ejemplo de cómo podría verse el archivo config.json:
 
 json
 Copy code
@@ -160,7 +161,7 @@ Modelo ProductoVenta:
 
 javascript
 Copy code
-const { Model, DataTypes } = require('sequelize');
+`const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
 const Producto = require('./producto');
 const Venta = require('./venta');
