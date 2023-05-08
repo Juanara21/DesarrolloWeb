@@ -39,7 +39,7 @@ Crea una base de datos en MySQL utilizando un cliente de MySQL, como phpMyAdmin 
 
 json
 Copy code
-`{
+{
   "development": {
     "username": "root",
     "password": "password",
@@ -61,7 +61,7 @@ Copy code
     "host": "localhost",
     "dialect": "mysql"
   }
-}`
+}
 #### Creación de modelos
 #### Crea un directorio models en la raíz de tu proyecto.
 #### Crea un archivo Cliente.js en el directorio models. 
