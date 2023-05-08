@@ -2,17 +2,17 @@
 
 Aquí te dejo una guía completa paso a paso para crear un backend con node.js, express, mysql y sequelize.
 
-Instalación de las herramientas
-Instala Node.js en tu computadora.
+###### Instalación de las herramientas
+###### Instala Node.js en tu computadora.
 
 ## Crea un directorio para tu proyecto y accede a él desde la terminal.
 
-Ejecuta el siguiente comando en la terminal para crear un archivo package.json y así poder manejar las dependencias de tu proyecto:
+###### Ejecuta el siguiente comando en la terminal para crear un archivo package.json y así poder manejar las dependencias de tu proyecto:
 
 bash
 Copy code
 `npm init -y`
-Instala las dependencias necesarias para el proyecto ejecutando el siguiente comando:
+###### Instala las dependencias necesarias para el proyecto ejecutando el siguiente comando:
 
 bash
 Copy code
